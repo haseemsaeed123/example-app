@@ -13,7 +13,7 @@ node {
            app.inside {
                    sh 'npm test'
            }
-}
+       }
    
        stage('Push iamge') {
                docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credentials') {
